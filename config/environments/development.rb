@@ -71,4 +71,6 @@ Rails.application.configure do
   # config.generators.apply_rubocop_autocorrect_after_generate!
 
   config.hosts.clear
+
+  config.action_controller.forgery_protection_origin_check = false
 end
