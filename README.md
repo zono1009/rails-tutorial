@@ -1,4 +1,5 @@
 # README
+プログラミング未経験の初心者がハンズオン形式でWebアプリケーションを動かし、その仕組みを学ぶためのリポジトリです。
 
 ## GitHub Codespaces
 勉強会では開発環境としてGitHub Codespacesを使います。  
