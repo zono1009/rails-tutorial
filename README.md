@@ -1,7 +1,9 @@
 # README
 
 ## GitHub Codespaces
-勉強会では開発環境としてGitHub Codespacesを使います。
+勉強会では開発環境としてGitHub Codespacesを使います。  
+GitHub Codespacesは、GitHubが提供するクラウドベースの開発環境です。  
+VS Codeをベースにしており、どのデバイスからでもすぐに開発を始めることができます。  
 https://github.com/codespaces/templates
 
 ## Webアプリケーションの大まかな仕組み
@@ -39,7 +41,7 @@ Webサーバー（例: Nginx, Puma）はリクエストを受け取り、アプ�
 ## Dockerfileとdocker-compose.ymlの役割
 
 Dockerfileは、Dockerイメージを作成するための設計図です。
-Dockerイメージとは、Dockerコンテナを起動するための「テンプレート」のようなものです。アプリケーションを実行するために必要なファイルや設定がすべて含まれています。
+Dockerイメージとは、Dockerコンテナを起動するための「テンプレート」のようなものです。アプリケーションを実行するために必要なファイルや設定がすべて含まれています。  
 以下のような内容を記述します。
 - ベースとなるイメージ（例: ruby:3.2）
 - 必要なパッケージやツールのインストール手順
