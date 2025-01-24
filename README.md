@@ -69,6 +69,14 @@ docker-compose.ymlの内容に基づいて、必要なコンテナを起動し�
 
 ## 勉強会で使用するコマンド
 ```
+# ディレクトリ移動
+cd rails-tutorial
+
+# 認証情報の設定
+unset GITHUB_TOKEN
+gh auth login
+
+# Docker関連
 docker-compose build
 docker-compose run --rm web bundle exec rails db:migrate
 docker-compose run --rm web bundle exec rails db:seed
