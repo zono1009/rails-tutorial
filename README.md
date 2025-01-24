@@ -73,8 +73,12 @@ docker-compose.ymlの内容に基づいて、必要なコンテナを起動し�
 cd rails-tutorial
 
 # 認証情報の設定
-unset GITHUB_TOKEN
-gh auth login
+export GITHUB_USER=
+export GITHUB_TOKEN=
+
+# Git関連
+git clone https://github.com/zono1009/rails-tutorial.git
+git push https://$GITHUB_USER:$GITHUB_TOKEN@github.com/zono1009/rails-tutorial.git
 
 # Docker関連
 docker-compose build
