@@ -80,6 +80,9 @@ export GITHUB_TOKEN=
 git clone https://github.com/zono1009/rails-tutorial.git
 git push https://$GITHUB_USER:$GITHUB_TOKEN@github.com/zono1009/rails-tutorial.git
 
+# ディレクトリ移動
+cd rails-tutorial
+
 # Docker関連
 docker-compose build
 docker-compose run --rm web bundle exec rails db:migrate
