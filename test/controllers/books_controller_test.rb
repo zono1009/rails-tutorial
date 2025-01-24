@@ -16,11 +16,11 @@ class BooksControllerTest < ActionDispatch::IntegrationTest
     # レスポンスの内容を解析
     books = assigns(:books) # コントローラーで設定されたインスタンス変数 @books を取得
 
-    # 取得件数が10件であることを確認
-    assert_equal 10, books.size
+    # 取得件数が20件であることを確認
+    assert_equal 20, books.size
 
-    # id順にソートされていることを確認
-    ids = books.map(&:id)
+    # author順にソートされていることを確認
+    ids = books.map(&:author)
     assert_equal ids, ids.sort
   end
 
