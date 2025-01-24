@@ -20,8 +20,8 @@ class BooksControllerTest < ActionDispatch::IntegrationTest
     assert_equal 20, books.size
 
     # author順にソートされていることを確認
-    ids = books.map(&:author)
-    assert_equal ids, ids.sort
+    authors = books.map(&:author)
+    assert_equal authors, authors.sort
   end
 
   test "should get new" do
