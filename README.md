@@ -69,9 +69,6 @@ docker-compose.ymlの内容に基づいて、必要なコンテナを起動し�
 
 ## 勉強会で使用するコマンド
 ```
-# ディレクトリ移動
-cd rails-tutorial
-
 # 認証情報の設定
 export GITHUB_USER=
 export GITHUB_TOKEN=
